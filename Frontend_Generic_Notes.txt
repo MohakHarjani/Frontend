@@ -1,6 +1,30 @@
 
-
 npm install -g @angular/cli@20
 
+=================================================================================================================================
+
+Create Repo and push to your github
+------------------------------------
+
+git init
+git remote add origin https://github.com/MohakTest/Frontend.git
+git remote -v
+git status 
+git add .
+git commit -m "start"
+git push origin master
 
 
+=================================================================================================================================
+
+Fetch changes from your github to your local
+------------------------------------------
+
+git pull origin master
+
+=================================================================================================================================
+
+
+
+
+I have a folder which Have many folders inside it I want to push that main folder to git but problem is the subfolder inside it also has a git folder (basically they are angular projects which by default has git initiliazed) so when I push the main folder, the other subfolders are not correctly pushed to github what is the solution
