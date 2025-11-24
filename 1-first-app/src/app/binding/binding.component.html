@@ -1,0 +1,26 @@
+<p>Binding</p>
+
+<div>Name : {{name}}</div><br> <!--Text Interpolation-->
+
+<input [value] = 'subject'>  <!--Property Binding-->
+<input [attr.value] = 'subject'> <!--Attribute Binding-->
+
+<br>
+
+<button (click) = 'changeSubject()'>Click Me</button><br><br>
+
+<!--Class Binding-->
+<div [class] = "'red bold border'">Mohak</div>
+<div [class.red] = "'true'" [class.bold] = "'true'">Mohak</div>
+<div [class] = "{ red : true, bold : false, border : false}">Mohak</div>
+<div [class] = 'classes'>Mohak</div>
+<br><br>
+
+<!--Style Binding-->
+<div [style] = "'color : blue; font-style : arial'">Harjani</div>
+<div [style.border] = "'2px solid red'" [style.width.px] = '400'>Harjani</div>
+<div [style] = "{ color : 'red', fontWeight : 'bold'}">Harjani</div>
+
+<br><br>
+
+<button (click) = 'onClick($event)'>Click Me</button>
